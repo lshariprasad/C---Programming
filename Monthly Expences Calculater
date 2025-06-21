@@ -1,0 +1,72 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int SF,EB,GB,MR,DP,PC,Pet,Gym,TE,FE,Veg,Gro,Clo,ME,EMI,Total;
+    
+    printf("ENTER THE SCHOOL FEES     : ");
+    scanf("%d",&SF);
+    printf("\n");
+    
+    printf("ENTER THE ELECTRICAL BILL : ");
+    scanf("%d",&EB);
+    printf("\n");
+    
+    printf("ENTER THE GAS BILL        : ");
+    scanf("%d",&GB);
+    printf("\n");
+    
+    printf("ENTER THE MOBILE RECHARGE : ");
+    scanf("%d",&MR);
+    printf("\n");
+    
+    printf("ENTER THE DAILY PRODUCTS  : ");
+    scanf("%d",&DP);
+    printf("\n");
+    
+    printf("ENTER THE PERSONAL CARE   : ");
+    scanf("%d",&PC);
+    printf("\n");
+    
+    printf("ENTER THE PETROL AMOUNT   : ");
+    scanf("%d",&Pet);
+    printf("\n");
+    
+    printf("ENTER THE GYM AMOUNT      : ");
+    scanf("%d",&Gym);
+    printf("\n");
+    
+    printf("ENTER THE TRAVEL EXPENCE  : ");
+    scanf("%d",&TE);
+    printf("\n");
+    
+    printf("ENTER THE FOOD EXPENCE    : ");
+    scanf("%d",&FE);
+    printf("\n");
+    
+    printf("ENTER THE VEGTABLE AMOUNT : ");
+    scanf("%d",&Veg);
+    printf("\n");
+    
+printf("ENTER THE TOTAL GROCEY AMOUNT : ");
+    scanf("%d",&Gro);
+    printf("\n");
+    
+printf("ENTER THE Cloth Amount Family : ");
+    scanf("%d",&Clo);
+    printf("\n");
+    
+   printf("ENTER THE MEDICAL EXPENCES : ");
+    scanf("%d",&ME);
+    printf("\n");
+    
+    printf("ENTER THE HOUSE EMI       : ");
+    scanf("%d",&EMI);
+    printf("\n");
+    
+    Total = SF+EB+GB+MR+DP+PC+Pet+Gym+TE+FE+Veg+Gro+Clo+ME+EMI;
+    
+    printf("THE TOTAL MONTHLY AMOUNT  : %d ",Total);
+    
+    return 0;
+}
