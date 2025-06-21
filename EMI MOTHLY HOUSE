@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double LA, RoI, LT, EMI;
+
+    printf("Enter The Principal Amount: ");
+    scanf("%lf", &LA);
+    printf("\n");
+
+    printf("Enter The Rate of Interest (per annum in %%): ");
+    scanf("%lf", &RoI);
+    printf("\n");
+
+    printf("Enter The Loan Tenure (in years): ");
+    scanf("%lf", &LT);
+    printf("\n");
+
+    double monthlyInterest = RoI / (12 * 100);  // from % annual to monthly decimal
+    double months = LT * 12;
+
+    EMI = (LA * monthlyInterest * pow(1 + monthlyInterest, months)) / (pow(1 + monthlyInterest, months) - 1);
+
+    printf("The EMI is: %.2lf\n", EMI);
+
+    return 0;
+}
